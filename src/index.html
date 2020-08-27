@@ -6,9 +6,25 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-  <title>Frontloops &mdash; ???</title>
+  <title>Frontloops &mdash; Side menu</title>
 </head>
 <body>
+  <div class="block">
+    <button class="btn" type="button" data-side-toggle="search">Search</button>
+    <button class="btn" type="button" data-side-toggle="run">Run</button>
+  </div>
+
+  <div class="side" data-side="search">
+    <h5 class="side__title">Whoa! You found me!</h5>
+    <button class="btn" type="button" data-side-toggle="search">Hide back</button>
+  </div>
+
+  <div class="side" data-side="run">
+    <h5 class="side__title">Please don't run!</h5>
+    <button class="btn" type="button" data-side-toggle="run">Close</button>
+  </div>
+
+  <div class="overlay"></div>
 
   <script src="./index.js"></script>
 </body>
